@@ -1,0 +1,156 @@
+@import url(Styles.css);
+.account i{
+    background-color: var(--selectedcolor);
+    border-radius: 1000px;
+    padding: 5px 0px;
+    
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.mi-cuenta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: var(--font1);
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo p {
+    color: #000;
+    font-family: 'Lohit Devanagari', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.523%; /* 35.468px */
+    letter-spacing: 1.44px;
+}
+
+.profle-content{
+    background-color: rgb(211, 211, 211);
+}
+
+
+.profile-section {
+    background-color: #F8F8F8; /* Color de fondo */
+    border-radius: 20px; 
+    padding: 20px; 
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+}
+
+.profile-picture {
+    width: 220px; /* tamaño de la foto de perfil */
+    height: 220px;
+    border-radius: 50%; 
+    margin-right: 15px; 
+}
+
+.username-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.username {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.edit-profile-button {
+    background-color: #00D9B2;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    padding: 2px 12px;
+    cursor: pointer;
+    margin-left: 650px; /* Alinea el botón al lado derecho */
+}
+
+.profile-details {
+    margin-top: 15px;
+}
+
+.experience-score{
+    font-size: 15px;
+    color: #FFC327;
+    margin-top: auto;
+    margin-right: 5px;
+
+
+}
+
+.experience-details {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: rgb(58, 58, 58);
+    margin-top: 0px;
+}
+
+
+
+.full-name,
+.experience {
+    font-size: 15px;
+    color: rgb(58, 58, 58);
+    margin-top: 1px;
+    margin-right: 1px;
+
+}
+
+
+.description-section {
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 12px;
+    color: rgb(114, 113, 113);
+}
+
+.statistics-section {
+    display: flex;
+    justify-content: space-around; /* Espacio uniforme entre las estadísticas */
+    margin-top: 10px;
+}
+
+.statistic {
+    text-align: center;
+    
+}
+
+.statistic-label {
+    font-size: 12px;
+    color: rgb(114, 113, 113);
+}
+
+.statistic-value-1 {
+    color: var(--redTourGuide);
+    font-size: 30px;
+    margin-block: 10px; 
+}
+
+.statistic-value-2 {
+    color: #FFC701;
+    font-size: 30px;
+    margin-block: 10px; 
+}
+
+.statistic-value-3 {
+    color: #1CC700;
+    font-size: 30px;
+    margin-block: 10px; 
+}

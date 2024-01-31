@@ -1,0 +1,238 @@
+@import url(Styles.css);
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--day);
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: auto;
+    margin-top: 2px;
+    
+    
+}
+
+.search-button {
+    width: 20%;
+    background-color: var(--redTourGuide);
+    border: none;
+    border-radius: 30px;
+    padding: 25px 15px;
+    margin-bottom: 30px; 
+    position: relative;
+    overflow: hidden;
+    font-family: 'Press Start 2P';
+    color: white;
+    border: solid white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.search-button img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 1.0;
+}
+
+.search-button .fas.fa-search {
+    position: absolute;
+    right: 4%; /* Mover el ícono hacia la derecha */
+    top:55%;
+    transform: translateY(-50%);
+    width: 20px; /* ancho */
+    height: 20px; /* altura*/
+    display: inline-block; /* elemento en línea */
+}
+
+.search-button .title {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    left: 10px; /* Mover el texto hacia la izquierda */
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+
+.login-section {
+    text-align: left;
+    width: 300px;
+}
+
+.login-title {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.login-subtitle {
+    font-size: 12px;
+}
+
+label {
+    font-size: 12px;
+    
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-style: italic;
+}
+
+.forgot-password {
+    font-size: 10px;
+    font-style: italic;
+    color: #FF4A4A; 
+    text-decoration: underline;
+    float: right;
+    margin-left: 10px;
+}
+
+.login-button {
+    width: 100%; 
+    background-color: var(--redTourGuide); 
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: block; 
+    margin: 10px auto; 
+    position: relative;
+    overflow: hidden;
+}
+
+.login-button{
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-button img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.login-button .Entrar-title{
+    position: relative;
+    z-index: 1;
+    
+
+}
+
+
+.no-account {
+    font-size: 10px;
+    text-decoration: underline;
+    font-style: italic;
+    text-align: center;
+}
+
+.create-account {
+    font-weight: bold;
+    color: #ff4747;
+    margin: 10px auto;
+    text-decoration: #ff4747;
+
+}
+
+.login-button:hover {
+    background-color: rgb(34, 34, 34);
+    
+}
+
+.search-button:hover{
+    background-color: rgb(34, 34, 34);
+    
+}
+
+
+/* Línea en el centro */
+.center-line {
+    width: 50%;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+}
+
+/* Sección "Continuar con Google" */
+
+.google-section{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin-left: 15px;
+}
+
+.google-button {
+    background-color: #fff; 
+    border: 1px solid #ccc; 
+    border-radius: 20px;
+    padding: 10px;
+    cursor: pointer;
+    display: flex; 
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    margin: 10px;
+    width: 300px;
+    
+    
+}
+
+.google{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.google-logo {
+    width: 25px; /* tamaño del logo */
+    height: auto;
+    margin-right: 15px; /* Espacio entre el logo y el texto del botón */
+}
+
+
+
+
+
+
+.terms-text {
+    text-align: left;
+    font-size: 12px;
+    color: #555; /* Color del texto */
+}
+
+.terms-text a {
+    color: #007BFF; /* Color del enlace */
+    text-decoration: underline; /* Subrayado en los enlaces */
+}
+
+
+
+
+
+
+
+
+

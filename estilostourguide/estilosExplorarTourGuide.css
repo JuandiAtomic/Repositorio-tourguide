@@ -1,0 +1,432 @@
+@import url(Styles.css);
+.explorar{
+    background-color: var(--selectedcolor);
+}
+
+/* -----------------------contenido---------------------------- */
+
+
+
+.contenido {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px; /* Ajusta el margen según sea necesario */
+}
+
+.seccion-izquierda {
+    width: 45%; /* Ajusta el ancho */
+    position: fixed;
+    top: 10%;
+    bottom: 0%;
+    z-index: 1;
+    
+
+
+}
+
+.mapa-imagen {
+    width: 107.7%;
+    height: auto;
+    object-fit: cover;
+    
+    
+    
+}
+
+.seccion-derecha {
+    width: 55%; /* Ajusta el ancho de la sección derecha según sea necesario */
+    margin-left: 50%;
+}
+
+/* --------------------buscador catalogos-------------------------- */
+
+.buscador {
+    margin-top: 0%;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se colapsen en una nueva línea cuando no hay espacio suficiente */
+}
+
+/* ----------------------destino------------------------------ */
+
+.search-input {
+    position: relative;
+    display: inline-block;
+    margin-right: 5px; /* Ajusta el margen entre los elementos */
+}
+
+/* Estilo para el ícono */
+.search-input i {
+    position: absolute;
+    left: 15px; 
+    top: 60%;
+    transform: translateY(-50%);
+    color: var(--iconcolors);
+}
+
+/* Estilo para el campo de entrada */
+.search-textbox {
+    padding: 15px 20px 15px 40px; /* Ajusta el padding para dejar espacio al ícono */
+    border: 0px  var(--formcolor);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em; /* ancho de la letra */
+    background-color: var(--formcolor);
+    margin-top: 10px;
+}
+
+
+/* Ajusta la apariencia del campo de entrada cuando está enfocado */
+.search-textbox:focus {
+    outline: none;
+    border-color: #555;
+}
+
+/* ----------------------------fechas------------------------ */
+#date-picker-container {
+    margin-right: 5px; /* Ajusta el margen entre los elementos */
+    padding: 1px 1px 1px 15px;
+    border: 0px var(--formcolor);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em;
+    background-color: var(--formcolor);
+    align-items: center;
+    display: flex; /* elementos en línea */
+    margin-top: 10px;
+}
+
+.input-llegada,
+.input-salida {
+    margin-right: 5px; /* Ajusta el margen entre los elementos */
+    display: flex;
+    align-items: center;
+}
+
+#fecha-llegada,
+#fecha-salida {
+    padding: 10px 35px 10px 5px;
+    border: 0px var(--formcolor);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em;
+    background-color: var(--formcolor);
+    align-items: center;
+}
+
+.input-llegada i,
+.input-salida i {
+    color: var(--iconcolors);
+    margin-right: 5px; /* Ajusta el margen entre el icono y el texto */
+}
+
+
+/* --------------------------personas---------------------- */
+
+.dropdown i{
+    padding-left: 5px;
+    color: var(--iconcolors);
+    margin-right: 1px; 
+}
+
+.dropdown {
+    max-width: 600px; 
+    padding: 10px; /* Ajusta el relleno */
+    border: 0px var(--formcolor);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em;
+    background-color: var(--formcolor);
+    align-items: center;
+    display: flex;
+    margin-top: 10px;
+    position: relative;
+}
+
+
+.dropdown-btn {
+    padding: 5px 10px;
+    border: 0px var(--formcolor);
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em;
+    background-color: var(--formcolor);
+    color: var(--iconcolors);
+    margin-top: 5px;
+    align-items: center;
+    
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content label,
+.dropdown-content input {
+    display: inline-block; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    white-space: nowrap; /* Evita que el contenido se divida en varias líneas */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content label,
+.dropdown-content input {
+    display: block;
+    margin: 5px;
+}
+
+.show {
+    display: block;
+}
+
+/* buscar */
+
+.buscar {
+    padding: 5px 20px;
+    border: 0px var(--formcolor);
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: 'Lao Muang Don', sans-serif;
+    letter-spacing: 0.04em;
+    color: var(--iconcolors);
+    background-color: #595FF9;
+    align-items: center;
+    display: block; /* elementos en línea */
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.buscar i{
+    color: white;
+}
+
+.buscar:hover{
+    background-color: #6268ff;
+}
+
+
+
+
+/* contenido y catálogo */
+
+.catalogos {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px 1px; /* Espacio entre los cuadros */
+    max-height: 760px; /* Altura máxima de la sección */
+    overflow-y: auto; /* Barra de desplazamiento vertical */
+    
+
+    
+    
+}
+
+.catalogos .background-font{
+    width: 250px;
+    height: 40px;
+    background-color: #1111119a;
+    border-radius: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    padding-left: 20px; 
+
+}
+
+.background-font{
+    margin-left: 10px;
+}
+
+.catalogos .title{
+    font-family: 'Lao Muang Don', sans-serif;
+    color: white;
+    text-align: left;
+    font-size: 26px;
+    
+    
+
+}
+
+.cuadro {
+    display: flex;
+    flex-direction: column;
+    width: 390px;
+    height: 400px;
+    border-radius: 33px;
+    border: 2px solid #ccc; /* Borde */
+    /* padding: 0px; Espaciado interno */
+    background-color: #fff; /* Color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    overflow: hidden;
+    position: relative;
+}
+
+.catalog-image{
+    align-items: center;
+    width: 100%;
+    height: 55%;
+    border-top-left-radius: 29px;
+    border-top-right-radius: 29px;
+    margin-bottom: 10px; /* Espacio entre la imagen y el título */
+    object-fit: cover; /* Evita que la imagen se estire y mantiene su proporción original */
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+    z-index: 0;
+}
+
+.estrellas-container {
+    position: absolute;
+    top: 10px; 
+    right: 10px; 
+    background-color: rgba(255, 255, 255, 0.932); /* Fondo blanco semitransparente */
+    border-radius: 30px;
+    padding: 0px 5px; /* Espaciado interno */
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.puntaje {
+    font-family: 'Lexend Exa', sans-serif;
+    color: #3F3F3F;
+    font-size: 20px;
+    margin-left: 5px;
+    line-height: 0;
+    
+}
+
+.fa-star{
+    color: #FFCC47;
+
+}
+
+.info{
+    font-size: 14px;
+    font-family: 'Gudea', sans-serif;
+    padding: 10px 30px 30px;
+}
+
+.info-1 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+.info-1-content {
+    font-weight: bold; 
+    color: #353535d0;
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Hace que ocupe todo el espacio disponible */
+    
+
+}
+
+.info-1 p,
+.info-2 p {
+    
+    margin: 0;
+}
+
+.num-estrellas {
+    margin-right: 1px; /* Ajusta el margen entre las estrellas */
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+.num-estrellas .fa-star {
+    color: #FFD700;
+    font-size: 12px; /* Ajusta el tamaño de las estrellas */
+}
+
+.detalle-1 {
+    color: #6a6a6acc;
+}
+
+
+
+.info-2{
+    margin-bottom: 2px;
+    color: #6a6a6acc;
+}
+
+.info-2-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.precio{
+    font-weight: bold; 
+    font-size: 22px;
+    color: #000000c0;
+    text-align: right;
+
+    
+}
+
+.green-text{
+    color: #0d8d01cb;
+}
+
+
+.like-container {
+    position: absolute;
+    bottom: 15px; 
+    right: 20px; 
+    background-color: #8585851f;
+    border-radius: 30px;
+    padding: 0px 10px; /* Espaciado interno */
+    display: flex;
+    align-items: center;
+    z-index: 1;
+    
+}
+
+.fa-heart{
+    color: #FF4141;
+    font-size: 24px;
+
+}
+
+.puntaje-like{
+    color: #3f3f3fd5;
+}
+
+.fa-regular{
+    color: #000000cb;
+}
+
+.gran-turismo{
+    display: flex;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

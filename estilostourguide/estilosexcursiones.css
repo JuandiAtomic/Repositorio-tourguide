@@ -1,0 +1,7 @@
+@import url(Styles.css);
+
+
+.excursiones{
+    background-color: var(--selectedcolor);
+}
+

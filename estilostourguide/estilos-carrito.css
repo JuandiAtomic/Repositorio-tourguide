@@ -1,0 +1,218 @@
+@import url(Styles.css);
+
+
+
+
+.car i{
+    background-color: var(--selectedcolor);
+    border-radius: 1000px;
+    padding: 5px 0px;
+    
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+.mi-carrito-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo p {
+    color: #000;
+    font-family: 'Lohit Devanagari', sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.523%; /* 35.468px */
+    letter-spacing: 1.44px;
+}
+
+.continuar-al-pago {
+    background-color: var(--redTourGuide);
+    color: white;
+    border: none;
+    padding: 10px 45px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: var(--font3);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%; /* 9.28px */
+    letter-spacing: 0.32px;
+}
+
+.continuar-al-pago:hover{
+    background-color: var(--night);
+}
+
+
+hr {
+    margin-top: 20px;
+    border: 0.5px solid #ddd;
+}
+
+
+.product-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 15px;
+
+}
+
+.product-image {
+    width: 180px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.product-text {
+    flex-grow: 1;
+    margin-left: 15px;
+    font-family: var(--font1);
+    font-weight: normal;
+    color: #292929;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.523%; /* 15.764px */
+    letter-spacing: 0.64px;
+    
+    
+}
+
+.boldtext {
+    font-weight: bold;
+
+}
+
+.product-price {
+    display: flex;
+    margin-left: 300px;
+}
+
+.product-price p {
+    font-weight: bold;
+    margin: 0;
+}
+
+.product-info {
+    display: flex;
+    font-size: 12px;
+    color: var(--gray);
+}
+
+.people{
+    margin-left: 30px;
+}
+
+.remove-button {
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 0% 0px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.remove-button i{
+    color: var(--redTourGuide);
+}
+
+.remove-button span{
+    color: var(--redTourGuide);
+    font-family: var(--font3);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 116%; /* 9.28px */
+    letter-spacing: 0.32px;
+    margin-left: 10px;
+}
+
+.remove-button img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+
+.remove-button span:hover{
+    text-decoration: underline;
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: var(--font1);
+    
+}
+
+
+
+.subtotal,
+.impuesto {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    font-family: var(--font1);
+    font-size: 12px;
+    
+}
+
+.totalsection{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 250px; /* Ajusta el ancho según sea necesario */
+    font-family: var(--font1);
+    font-size: 20px;
+
+}
+
+
+
+.lastoption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Utiliza el 100% del ancho disponible */
+}
+
+.continuarcompras {
+    margin-right: 15px; 
+    margin-left: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--redTourGuide);
+}
+
+
+
+
+
+
+

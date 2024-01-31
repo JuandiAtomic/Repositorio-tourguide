@@ -1,0 +1,7 @@
+@import url(Styles.css);
+.bell i{
+    background-color: var(--selectedcolor);
+    border-radius: 1000px;
+    padding: 5px 0px;
+    
+}

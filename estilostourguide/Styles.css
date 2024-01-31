@@ -1,0 +1,131 @@
+
+:root{
+    --redTourGuide: #D6234E;
+    --day: #fff;
+    --night: #1C1C1C;
+    --selectedcolor: #1f1f1f3a;
+    --redhovercolor: #fc3d3dd5;
+    --formcolor: #EAEAEA;
+    --iconcolors: #505050;
+    --font1:'Lao Muang Don', sans-serif;
+    --font2:'Lohit Devanagari', sans-serif;
+    --font3: "Arimo Hebrew Subset", sans-serif;
+    --gray: rgba(61, 61, 61, 0.699);
+
+}
+
+@font-face {
+    font-family: 'Lao Muang Don';
+    src: url('fonts/LaoMuangDon-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lohit Devanagari';
+    src: url('fonts/Lohit-Devanagari.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+
+.navbar {
+    height: 80px;
+    background-color: var(--redTourGuide);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-family: var(--fontTourGuide1);
+    font-size: 25px;
+    background: url('../images/menu-texture.JPG') repeat;
+    position: relative;
+    z-index: 2;
+    
+}
+
+
+.nav-left, .nav-center, .nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-right{
+    padding-right: 50px;
+}
+
+.navbar a {
+    color: var(--day);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.logo img {
+    width: 180px;
+    height: auto;
+}
+
+.fa-solid .fa-bell{
+    width: 20px;
+    height: auto;
+}
+
+.excursiones{
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Borde inicial transparente */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transiciones para suavizar cambios */
+    font-size: 18px;
+}
+
+.favoritos{
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Borde inicial transparente */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transiciones para suavizar cambios */
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.explorar{
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border: 2px solid transparent; /* Borde inicial transparente */
+    border-radius: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease; /* Transiciones para suavizar cambios */
+    font-size: 18px;
+    box-sizing: border-box; 
+}
+
+.excursiones :hover{
+    font-size: 16.5px;
+}
+
+.favoritos :hover{
+    font-size: 16.5px;
+
+}
