@@ -1,8 +1,4 @@
 @import url(Styles.css);
-
-
-
-
 .car i{
     background-color: var(--selectedcolor);
     border-radius: 1000px;
@@ -12,11 +8,9 @@
 
 
 
-body {
-    margin: 0;
-    padding: 0;
-    
-    
+body{
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando es necesario */
+    max-height: auto;
 }
 
 .mi-carrito-container {

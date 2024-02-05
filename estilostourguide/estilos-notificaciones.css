@@ -5,3 +5,160 @@
     padding: 5px 0px;
     
 }
+
+body{
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando es necesario */
+    max-height: auto;
+}
+
+
+
+
+.notificaciones-container{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    
+    
+}
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.titulo p{
+    color: #000;
+    font-family: var(--font2);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.523%; /* 35.468px */
+    letter-spacing: 1.44px;
+}
+
+.subtitle p{
+    color: #292929;
+    font-family: var(--font2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 98.523%; /* 35.468px */
+    letter-spacing: 1.44px;
+    margin-left: 50px;
+}
+
+hr {
+    margin-top: 20px;
+    border: 0.5px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.notification{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    background-color: #f0f0f044;
+    border-radius: 5px;
+
+}
+
+.old-notification{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    border-radius: 5px;
+}
+
+.notification p,
+.old-notification p{
+    font-family: var(--font1);
+    font-size: 12px;
+    color: #3d3d3dd8;
+    width: 50px;
+    white-space: nowrap;
+    
+}
+
+.new-notification-symbol{
+    color: #3787FF;
+    margin-left: 60px;
+}
+
+.title-notification p{
+    font-size: 22px;
+    color: #000000d5;
+}
+
+.time-notification p{
+    font-size: 10px;
+    color: #404040c7;
+}
+
+
+
+.imagen-1{
+    width: 95px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-left: 1px ;
+
+}
+
+.profile-image{
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 50px;
+    margin-left: 16px ;
+}
+
+
+.image-notification-2{
+    width: 210px;
+    height: 70px;
+    margin-left: 250px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative; 
+    
+    
+}
+
+
+.imagen-2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    
+}
+
+.text{
+    width: auto;
+    height: auto;
+    text-align: start;
+    margin-left: 10px;
+}
+
+
+.text p {
+    margin: 5px 0; 
+}
+
+
+.new-notification-symbol i {
+    font-size: 8px; 
+}
+
+footer{
+    width: 200px;
+    height: 100px;
+}

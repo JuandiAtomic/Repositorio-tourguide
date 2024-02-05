@@ -5,7 +5,10 @@
 
 /* -----------------------contenido---------------------------- */
 
-
+body{
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando es necesario */
+    max-height: auto;
+}
 
 .contenido {
     display: flex;
@@ -227,7 +230,7 @@
     
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px 1px; /* Espacio entre los cuadros */
+    gap: 20px 20px; /* Espacio entre los cuadros */
     max-height: 760px; /* Altura máxima de la sección */
     overflow-y: auto; /* Barra de desplazamiento vertical */
     

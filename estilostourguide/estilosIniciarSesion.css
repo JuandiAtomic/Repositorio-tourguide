@@ -5,6 +5,9 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--day);
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando es necesario */
+    max-height: auto;
+    
     
 }
 
